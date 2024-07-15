@@ -110,8 +110,7 @@ def discover_exporter(url_patterns):
             except Exception as exception:
                 logger.error(
                     "Impossible to load the following exporter, class %s not found, exception: %s",
-                    pattern["view"],
-                    str(exception),
+(pattern["view"], str(exception)),
                 )
     except ValidationError as exception:
         raise Exception(
