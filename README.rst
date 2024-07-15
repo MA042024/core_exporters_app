@@ -1,25 +1,20 @@
-==================
-Core Exporters App
-==================
+This repository is a modified fork of the NIST CDCS `core_exporters_app <https://github.com/usnistgov/core_exporters_app>`_
+(exporters for the curator core project), used by the AsphaltMine (AM) web application.
 
-Exporters for the curator core project.
+Modifications
+=============
 
-Quick start
-===========
+This fork includes modifications for AsphaltMine, in place since 2024-07-15. For the detailed
+nature and dates of changes, see this repository's commit history.
 
-1. Add "core_exporters_app" to your INSTALLED_APPS setting
-----------------------------------------------------------
+Original NIST core_exporters_app
+=================================
 
-.. code:: python
+For the unmodified original, see ``ORIGINAL_README.rst`` and
+`https://github.com/usnistgov/core_exporters_app <https://github.com/usnistgov/core_exporters_app>`_.
 
-    INSTALLED_APPS = [
-      ...
-      'core_exporters_app',
-    ]
+Licensing
+=========
 
-2. Include the core_exporters_app URLconf in your project urls.py
------------------------------------------------------------------
-
-.. code:: python
-
-      url(r'^exporter/', include("core_exporters_app.urls")),
+- NIST License: ``LICENSE.md``
+- Third Party License: ``THIRD_PARTY_LICENSES.md``

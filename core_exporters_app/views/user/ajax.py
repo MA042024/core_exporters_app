@@ -120,7 +120,7 @@ def check_download_status(request):
         json.dumps(
             {
                 "is_ready": exported_file.is_ready,
-                "message": "The file is now ready for download",
+                "message": "The file is ready for download.",
             }
         ),
         content_type="application/javascript",
